@@ -32,7 +32,38 @@ int main(int argc, const char** argv)
 			break;
 		}
 
-		imshow("MyVideo", frame); //show the frame in "MyVideo" window
+
+		cv::Mat grayscaleMat(frame.size(), CV_8U);
+		cv::cvtColor(frame, grayscaleMat, CV_BGR2GRAY);
+		cv::Mat binaryMat(grayscaleMat.size(), grayscaleMat.type());
+		cv::threshold(grayscaleMat, binaryMat, 130, 255, cv::THRESH_BINARY);
+
+		cv::Mat skel(frame.size(), CV_8UC1, cv::Scalar(0));
+		cv::Mat temp(frame.size(), CV_8UC1);
+
+		cv::Mat element = cv::getStructuringElement(cv::MORPH_CROSS, cv::Size(3, 3));
+
+		bool done;
+		do
+		{
+			cv::morphologyEx(binaryMat, temp, cv::MORPH_OPEN, element);
+			cv::bitwise_not(temp, temp);
+			cv::bitwise_and(binaryMat, temp, temp);
+			cv::bitwise_or(skel, temp, skel);
+			cv::erode(binaryMat, binaryMat, element);
+
+			double max;
+			cv::minMaxLoc(binaryMat, 0, &max);
+			done = (max == 0);
+		} while (!done);
+
+		
+
+
+
+
+
+		imshow("MyVideo", skel); //show the frame in "MyVideo" window
 
 		if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
 		{
@@ -42,3 +73,4 @@ int main(int argc, const char** argv)
 	}
 	return 0;
 }
+

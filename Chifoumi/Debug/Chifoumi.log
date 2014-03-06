@@ -1,14 +1,14 @@
-﻿La génération a démarré 06.03.2014 13:06:29.
-     1>Projet "C:\chifoumi\Chifoumi\Chifoumi.vcxproj" sur le nœud 2 (Build cible(s)).
+﻿Build started 06.03.2014 14:28:56.
+     1>Project "C:\Users\Gary\Documents\GitHub\chifoumi\Chifoumi\Chifoumi.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv248\opencv\build\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Chifoumi.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Chifoumi.cpp
          Chifoumi.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\chifoumi\Debug\Chifoumi.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv248\opencv\build\x86\vc12\lib opencv_calib3d248.lib opencv_calib3d248d.lib opencv_contrib248.lib opencv_contrib248d.lib opencv_core248.lib opencv_core248d.lib opencv_features2d248.lib opencv_features2d248d.lib opencv_flann248.lib opencv_flann248d.lib opencv_gpu248.lib opencv_gpu248d.lib opencv_highgui248.lib opencv_highgui248d.lib opencv_imgproc248.lib opencv_imgproc248d.lib opencv_legacy248.lib opencv_legacy248d.lib opencv_ml248.lib opencv_ml248d.lib opencv_nonfree248.lib opencv_nonfree248d.lib opencv_objdetect248.lib opencv_objdetect248d.lib opencv_ocl248.lib opencv_ocl248d.lib opencv_photo248.lib opencv_photo248d.lib opencv_stitching248.lib opencv_stitching248d.lib opencv_superres248.lib opencv_superres248d.lib opencv_ts248.lib opencv_ts248d.lib opencv_video248.lib opencv_video248d.lib opencv_videostab248.lib opencv_videostab248d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\chifoumi\Debug\Chifoumi.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\chifoumi\Debug\Chifoumi.lib" /MACHINE:X86 Debug\Chifoumi.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Gary\Documents\GitHub\chifoumi\Debug\Chifoumi.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv248\opencv\build\x86\vc12\lib opencv_calib3d248.lib opencv_calib3d248d.lib opencv_contrib248.lib opencv_contrib248d.lib opencv_core248.lib opencv_core248d.lib opencv_features2d248.lib opencv_features2d248d.lib opencv_flann248.lib opencv_flann248d.lib opencv_gpu248.lib opencv_gpu248d.lib opencv_highgui248.lib opencv_highgui248d.lib opencv_imgproc248.lib opencv_imgproc248d.lib opencv_legacy248.lib opencv_legacy248d.lib opencv_ml248.lib opencv_ml248d.lib opencv_nonfree248.lib opencv_nonfree248d.lib opencv_objdetect248.lib opencv_objdetect248d.lib opencv_ocl248.lib opencv_ocl248d.lib opencv_photo248.lib opencv_photo248d.lib opencv_stitching248.lib opencv_stitching248d.lib opencv_superres248.lib opencv_superres248d.lib opencv_ts248.lib opencv_ts248d.lib opencv_video248.lib opencv_video248d.lib opencv_videostab248.lib opencv_videostab248d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Gary\Documents\GitHub\chifoumi\Debug\Chifoumi.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Gary\Documents\GitHub\chifoumi\Debug\Chifoumi.lib" /MACHINE:X86 Debug\Chifoumi.obj
          Debug\stdafx.obj
-         Chifoumi.vcxproj -> C:\chifoumi\Debug\Chifoumi.exe
-     1>Génération du projet "C:\chifoumi\Chifoumi\Chifoumi.vcxproj" terminée (Build cible(s)).
+         Chifoumi.vcxproj -> C:\Users\Gary\Documents\GitHub\chifoumi\Debug\Chifoumi.exe
+     1>Done Building Project "C:\Users\Gary\Documents\GitHub\chifoumi\Chifoumi\Chifoumi.vcxproj" (Build target(s)).
 
-La génération a réussi.
+Build succeeded.
 
-Temps écoulé 00:00:06.98
+Time Elapsed 00:00:00.74
