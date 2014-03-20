@@ -65,18 +65,14 @@ int main(int argc, const char** argv)
 		}
 		else
 		{
-			cout << "test0" << endl;
 
 			frameRight = frameLeft.clone();
 			frameRight = process(frameRight);
-
-			cout << "test1" << endl;
 
 			// IMAGE PROCESSING
 			// ...
 			// IMAGE PROCESSING END
 
-<<<<<<< HEAD
 			// DISPLAYING
 			IplImage iplLeft = frameLeft;
 			IplImage iplRight = frameRight;
@@ -87,40 +83,6 @@ int main(int argc, const char** argv)
 			cvSetImageROI(dst, cvRect(iplLeft.width, 0, iplRight.width, iplRight.height));
 			cvCopy(&iplRight, dst, NULL);
 			cvResetImageROI(dst);
-=======
-
-		cv::Mat grayscaleMat(frame.size(), CV_8U);
-		cv::cvtColor(frame, grayscaleMat, CV_BGR2GRAY);
-		cv::Mat binaryMat(grayscaleMat.size(), grayscaleMat.type());
-		cv::threshold(grayscaleMat, binaryMat, 130, 255, cv::THRESH_BINARY);
-
-		cv::Mat skel(frame.size(), CV_8UC1, cv::Scalar(0));
-		cv::Mat temp(frame.size(), CV_8UC1);
-
-		cv::Mat element = cv::getStructuringElement(cv::MORPH_CROSS, cv::Size(3, 3));
-
-		bool done;
-		do
-		{
-			cv::morphologyEx(binaryMat, temp, cv::MORPH_OPEN, element);
-			cv::bitwise_not(temp, temp);
-			cv::bitwise_and(binaryMat, temp, temp);
-			cv::bitwise_or(skel, temp, skel);
-			cv::erode(binaryMat, binaryMat, element);
-
-			double max;
-			cv::minMaxLoc(binaryMat, 0, &max);
-			done = (max == 0);
-		} while (!done);
-
-		
-
-
-
-
-
-		imshow("MyVideo", skel); //show the frame in "MyVideo" window
->>>>>>> 2290021b387ed0d21a1a9f9e70edee0add6e8e25
 
 			cvShowImage("Chifoumi", dst);
 			// DISPLAYING END
